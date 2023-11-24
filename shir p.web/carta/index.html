@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/globals.css" />
+
+    <title>Travel Slider</title>
+  </head>
+
+  <body>
+    <header>
+        <img src="./images/borrar.png" alt="">
+    </header>
+    <main>
+        <section>
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/mon.jpeg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cata.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/niev.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/amarr.jpeg" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+  </body>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</html>
